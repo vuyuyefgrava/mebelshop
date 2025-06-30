@@ -1,0 +1,62 @@
+#order-history {
+  margin-top: 40px;
+  padding: 40px 20px;
+  background-color: black;
+  border-top: 1px solid #e0e0e0;
+  color: white;
+  border-radius: 40px;
+}
+
+.order-history__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.order-history__title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.order-history__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-history__item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+  transition: transform 0.2s ease;
+}
+
+.order-history__item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.clear-history-btn {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 20px;
+  background-color: #5a6d8c; /* серо-синий */
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(90, 109, 140, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.clear-history-btn:hover {
+  background-color: #44526e;
+  transform: scale(1.03);
+}

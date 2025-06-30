@@ -1,0 +1,153 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 60%;
+  max-width: 800px;
+  margin: 5% auto;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+}
+
+.modal-image {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 5px;
+}
+
+.modal-details {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+.product-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin: 10px 0;
+}
+
+.reviews {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.reviews span {
+  margin-left: 10px;
+}
+
+.size-selector {
+  margin-top: 20px;
+}
+
+.size-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.size-buttons button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 3vw;
+  text-align: center;
+}
+
+.size-buttons button:hover {
+  background-color: #ddd;
+}
+
+.store-availability {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.store-availability:hover {
+  background-color: #e9ecef;
+}
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+    width: 90%;
+    margin: 10% auto;
+    padding: 15px;
+  }
+
+  .modal-image,
+  .modal-details {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .modal-image img {
+    max-height: 200px;
+  }
+
+  .size-buttons button {
+    width: 20vw;
+  }
+
+  .close {
+    right: 10px;
+    top: 5px;
+    font-size: 24px;
+  }
+
+  .product-title {
+    font-size: 16px;
+  }
+
+  .product-price {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name" : "Комод 1",
+        "price": 100,
+        "image": "../pic/chest3.png"
+    },
+    {
+        "id": 2,
+        "name" : "Комод 2",
+        "price": 200,
+        "image": "./pic/chest4.png"
+    },
+    {
+        "id": 3,
+        "name" : "Комод 3",
+        "price": 300,
+        "image": "./pic/chest5.png"
+    },
+    {
+        "id": 4,
+        "name" : "Диван 1",
+        "price": 100,
+        "image": "../pic/sofa2.png"
+    },
+    {
+        "id": 5,
+        "name" : "Диван 2",
+        "price": 100,
+        "image": "../pic/sofa3.png"
+    },
+    {
+        "id": 6,
+        "name" : "Диван 3",
+        "price": 100,
+        "image": "../pic/sofa4.png"
+    },
+    {
+        "id": 7,
+        "name" : "Диван 4",
+        "price": 100,
+        "image": "../pic/sofa5.png"
+    }
+]

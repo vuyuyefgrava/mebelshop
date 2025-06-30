@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MebelShop</title>
+    <link rel="stylesheet" href="../styles/tables.css" />
+    <link rel="stylesheet" href="../styles/modal-window.css" />
+    <link rel="stylesheet" href="../styles/button-up.css">
+    <script src="../script/button-up.js" defer></script>
+    <script src="../script/addGoods.js" defer></script>
+    <script src="../script/modal-window.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav">
+        <div class="nav-brand">
+          <a href="../index.html" id="nav-title">MS</a>
+        </div>
+        <div class="nav-text">
+          <a href="./chests.html" class="nav-links inactive">Комоды</a>
+          <a href="#" class="nav-links active">Столы</a>
+          <a href="sofa.html" class="nav-links inactive">Диваны</a>
+          <a href="FAQ.html" class="nav-links inactive" onclick="sessionStorage.setItem('scrollTo', 'about')">О нас</a>
+          <a href="basket.html" class="nav-links inactive nav__basket"
+            ><img src="../pic/basket.png" alt="basket" class="nav__basket__img"
+          /></a>
+        </div>
+      </div>
+    </nav>
+    <div class="mainContent" id="mainContent">
+      <div
+        class="content1"
+        id="content1"
+        onclick="openModal('Чёрный овальный стол на двойной изогнутой опоре', '54 000 ₽', 'Современный овальный стол в чёрном глянцевом исполнении с уникальной изогнутой опорой. Двойная ножка придаёт конструкции динамичный облик и делает стол визуальным акцентом интерьера. Благодаря устойчивому основанию и гладкой поверхности он отлично подойдёт для гостиной, лаунж-зоны или переговорной. Лаконичная форма и насыщенный цвет впишутся в минималистичную и дизайнерскую обстановку.', '../pic/table2.png')"
+      >
+        <div class="text1 text">
+          <h2 class="h2 text">Чёрный овальный стол на двойной изогнутой опоре</h2>
+          <h3 class="h3 text">
+            <h4>Размер (ШхВхГ) - 80х75х80 см</h4>
+            <h4>Максимальная нагрузка - 60 кг</h4>
+            <h4>Материал столешницы - МДФ</h4>
+            <h4>Материал основания - металл</h4>
+          </h3>
+          <button
+            class="add-to-cart button-link"
+            data-id="4"
+            data-name="Чёрный овальный стол на двойной изогнутой опоре"
+            data-price="54000"
+            data-description="Размер: Средний (подходит для 4–6 персон)"
+            data-img="../pic/table2.png"
+          >
+            Добавить в корзину
+          </button>
+        </div>
+        <img src="../pic/table2.png" alt="" id="img1" />
+      </div>
+      <div
+        class="content2"
+        id="content2"
+        onclick="openModal('Чёрный круглый стол на раздвоенной опоре', '39 000 ₽', 'Эффектный круглый стол с акцентной ножкой в виде раздвоенной опоры, соединяющейся у основания. Столешница выполнена из гладкого чёрного материала с насыщенным глянцевым блеском. Конструкция устойчива и компактна — идеально подойдёт для кухни, обеденной зоны или стильного офиса. Геометричный дизайн добавляет интерьеру графичности и современного характера.', '../pic/table3.png')"
+      >
+        <div class="text2 text">
+          <h2 class="h2 text">Чёрный круглый стол на раздвоенной опоре</h2>
+          <h3 class="h3 text">
+            <h4>Размер (ДхВ) - 60х72 см</h4>
+            <h4>Максимальная нагрузка	- 25 кг</h4>
+            <h4>Материал столешницы	- керамика</h4>
+            <h4>Материал основания - металл</h4>
+          </h3>
+          <button
+            class="add-to-cart button-link"
+            data-id="5"
+            data-name="Чёрный круглый стол на раздвоенной опоре"
+            data-price="39000"
+            data-description="Размер: Компактный (для 2–4 персон)"
+            data-img="../pic/table3.png"
+          >
+            Добавить в корзину
+          </button>
+        </div>
+        <img src="../pic/table3.png" alt="" id="img2" />
+      </div>
+      <div
+        class="content1"
+        id="content1"
+        onclick="openModal('Чёрный круглый стол на широкой центральной ножке', '59000 ₽', 'Простой и элегантный круглый стол с гладкой глянцевой поверхностью и центральной воронкообразной ножкой. Благодаря цельной конструкции он смотрится монолитно и выразительно. Идеален для современного интерьера, особенно в стилях минимализм, арт-деко или монохром. Можно использовать как обеденный стол, для переговорной или как арт-объект в интерьере.', '../pic/table4.png')"
+      >
+        <div class="text1 text">
+          <h2 class="h2 text">Чёрный круглый стол на широкой центральной ножке</h2>
+          <h3 class="h3 text">
+            <h4>Размер (ШхВхГ) - 90х75х55 см</h4>
+            <h4>Максимальная нагрузка	- 45 кг</h4>
+            <h4>Материал столешницы	- ЛДСП</h4>
+            <h4>Материал основания	- ЛДСП</h4>
+          </h3>
+          <button
+            class="add-to-cart button-link"
+            data-id="6"
+            data-name="Чёрный круглый стол на широкой центральной ножке"
+            data-price="59000"
+            data-description="Большой (подходит для 6 персон и более)"
+            data-img="../pic/table4.png"
+          >
+            Добавить в корзину
+          </button>
+        </div>
+        <img src="../pic/table4.png" alt="" id="img3" />
+      </div>
+      <div
+        class="content2"
+        id="content2"
+        onclick="openModal('Чёрный овальный стол на двух скульптурных ножках', '62 000 ₽', 'Элегантный овальный стол с изысканным силуэтом и выразительными двухопорными ножками. Благодаря скульптурной форме основания стол смотрится динамично и необычно, оставаясь при этом устойчивым и функциональным. Чёрная глянцевая поверхность подчёркивает стиль и строгость формы. Подходит для просторных гостиных, стильных офисов и дизайнерских интерьеров, где важен баланс между эстетикой и практичностью.', '../pic/table5.png')"
+      >
+        <div class="text2 text">
+          <h2 class="h2 text">Чёрный овальный стол на двух скульптурных ножках
+          </h2>
+          <h3 class="h3 text">
+            <h4>Размер (ШхВхГ) - 60х71х60 см</h4>
+            <h4>Максимальная нагрузка	- 25 кг</h4>
+            <h4>Материал столешницы	- МДФ</h4>
+            <h4>Материал основания - сталь</h4>
+          </h3>
+          <button
+            class="add-to-cart button-link"
+            data-id="7"
+            data-name="Чёрный овальный стол на двух скульптурных ножках"
+            data-price="62000"
+            data-description="Размер: Просторный (для 6–8 персон)"
+            data-img="../pic/table5.png"
+          >
+            Добавить в корзину
+          </button>
+        </div>
+        <img src="../pic/table5.png" alt="" id="img4" />
+      </div>
+    </div>
+
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-image">
+          <img id="modalImage" src="" alt="Product Image" />
+        </div>
+        <div class="modal-details">
+          <h2 class="product-title" id="modalTitle"></h2>
+          <p class="product-price" id="modalPrice"></p>
+          <p id="modalDescription"></p>
+        </div>
+      </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Наверх">↑</button>
+
+    <footer class="text">
+      <div class="footer-rows">
+        <div class="footer-column1">
+          <h5>Каталог</h5>
+          <h6 class="footer-text">
+            <a href="../pages/chests.html" class="footer-a">Комоды</a>
+          </h6>
+          <h6 class="footer-text">
+            <a href="../pages/tables.html" class="footer-a">Столы</a>
+          </h6>
+          <h6 class="footer-text">
+            <a href="../pages/sofa.html" class="footer-a">Диваны</a>
+          </h6>
+        </div>
+        <div class="footer-column2">
+          <h5>Покупателям</h5>
+          <h6 class="footer-text">
+            <a
+              href="../pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'how-to-order')"
+              >Как заказать</a
+            >
+          </h6>
+          <h6 class="footer-text">
+            <a
+              href="../pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'payment')"
+              >Оплата</a
+            >
+          </h6>
+          <h6 class="footer-text">
+            <a
+              href="../pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'delivery')"
+              >Доставка</a
+            >
+          </h6>
+          <h6 class="footer-text">
+            <a
+              href="basket.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'order-history')"
+              >История заказов</a
+            >
+          </h6>
+        </div>
+        <div class="footer-column3">
+          <h5>MebelShop</h5>
+          <h6 class="footer-text">
+            <a
+              href="../pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'contacts')"
+              >Контакты</a
+            >
+          </h6>
+          <h6 class="footer-text">
+            <a
+              href="../pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'about')"
+              >О нас</a
+            >
+          </h6>
+        </div>
+        <div class="footer-column4">
+          <h5>Сотрудничество</h5>
+          <h6 class="footer-text">
+            <a
+              href="../pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'architects-&-designers')"
+              >Архитекторам и дизайнерам</a
+            >
+          </h6>
+        </div>
+        <div class="footer-column5">
+          <h6 class="footer-text">
+            <a href="../pages/FAQ.html" class="footer-a" onclick="sessionStorage.setItem('scrollTo', 'user-agreement')">Пользовательское соглашение</a>
+          </h6>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

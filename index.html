@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/button-up.css" />
+    <script src="script/button-up.js" defer></script>
+    <title>Mebelshop</title>
+  </head>
+  <body>
+    <nav class="">
+      <div class="nav">
+        <div class="nav-brand">
+          <a href="./index.html" id="nav-title">MebelShop</a>
+        </div>
+        <div class="nav-text">
+          <a href="./pages/chests.html" class="nav-links inactive">Комоды</a>
+          <a href="./pages/tables.html" class="nav-links inactive">Столы</a>
+          <a href="./pages/sofa.html" class="nav-links inactive">Диваны</a>
+          <a href="./pages/FAQ.html" class="nav-links inactive" onclick="sessionStorage.setItem('scrollTo', 'about')">О нас</a>
+        </div>
+      </div>
+    </nav>
+    <div class="mainContent" id="mainContent">
+      <a href="" class="ready-made">
+        <div class="content3" id="content3">
+          <div class="text3 text">
+            <h1 class="h1 text">Готовые</h1>
+            <h1 class="h1 text">Варианты</h1>
+            <h1 class="h1 text">Интерьера</h1>
+          </div>
+        </div>
+      </a>
+      <div class="content1" id="content1">
+        <div class="text1 text">
+          <h2 class="h2 text">Комоды</h2>
+          <a href="./pages/chests.html" class="button-link"
+            >Перейти в каталог</a
+          >
+        </div>
+        <img src="./pic/chest1.png" alt="" id="img1" />
+      </div>
+      <div class="content2" id="content2">
+        <div class="text2 text">
+          <h2 class="h2 text">Столы</h2>
+          <a href="./pages/tables.html" class="button-link"
+            >Перейти в каталог</a
+          >
+        </div>
+        <img src="./pic/table1.png" alt="" id="img2" />
+      </div>
+      <div class="content1" id="content1">
+        <div class="text1 text">
+          <h2 class="h2 text">Диваны</h2>
+          <a href="./pages/sofa.html" class="button-link">Перейти в каталог</a>
+        </div>
+        <img src="./pic/sofa1.png" alt="" id="img4" />
+      </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Наверх">↑</button>
+    <footer class="text">
+      <div class="footer-rows">
+        <div class="footer-column1">
+          <h5>Каталог</h5>
+          <h6 class="footer-text">
+            <a href="./pages/chests.html" class="footer-a">Комоды</a>
+          </h6>
+          <h6 class="footer-text">
+            <a href="./pages/tables.html" class="footer-a">Столы</a>
+          </h6>
+          <h6 class="footer-text">
+            <a href="./pages/sofa.html" class="footer-a">Диваны</a>
+          </h6>
+        </div>
+        <div class="footer-column2">
+          <h5>Покупателям</h5>
+          <h6 class="footer-text">
+            <a
+              href="./pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'how-to-order')"
+              >Как заказать</a
+            >
+          </h6>
+          <h6 class="footer-text">
+            <a
+              href="./pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'payment')"
+              >Оплата</a
+            >
+          </h6>
+          <h6 class="footer-text">
+            <a
+              href="./pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'delivery')"
+              >Доставка</a
+            >
+          </h6>
+          <h6 class="footer-text">
+            <a
+              href="./pages/basket.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'order-history')"
+              >История заказов</a
+            >
+          </h6>
+        </div>
+        <div class="footer-column3">
+          <h5>MebelShop</h5>
+          <h6 class="footer-text">
+            <a
+              href="./pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'contacts')"
+              >Контакты</a
+            >
+          </h6>
+          <h6 class="footer-text">
+            <a
+              href="./pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'about')"
+              >О нас</a
+            >
+          </h6>
+        </div>
+        <div class="footer-column4">
+          <h5>Сотрудничество</h5>
+          <h6 class="footer-text">
+            <a
+              href="./pages/FAQ.html"
+              class="footer-a"
+              onclick="sessionStorage.setItem('scrollTo', 'architects-&-designers')"
+              >Архитекторам и дизайнерам</a
+            >
+          </h6>
+        </div>
+        <div class="footer-column5">
+          <h6 class="footer-text">
+            <a href="./pages/FAQ.html" class="footer-a" onclick="sessionStorage.setItem('scrollTo', 'user-agreement')">Пользовательское соглашение</a>
+          </h6>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

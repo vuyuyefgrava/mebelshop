@@ -1,0 +1,410 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1rem;
+  background-color: #d4d4d4;
+}
+
+nav {
+  position: sticky;
+  background-color: rgb(31, 27, 27);
+  position: -webkit-sticky;
+  top: 10;
+  z-index: 1020;
+  animation: ani 1s forwards;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  min-height: 3vw;
+  max-height: 11vw;
+  gap: 10%;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 100%;
+  border: 10%;
+  align-items: center;
+}
+
+.nav-brand {
+  margin-left: 3%;
+  font-size: 1.5vw;
+}
+
+#nav-title {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-text {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: clamp(17px, 1.3vw, 32px);
+  display: flex;
+  justify-content: end;
+  gap: 5%;
+  width: 35%;
+  margin-right: 2%;
+  align-items: center;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__basket {
+  width: 3vw;
+}
+
+.nav__basket__img {
+  width: 100%;
+  height: 3vw;
+}
+
+.inactive {
+  color: gray;
+  transition: 0.3s ease-in-out;
+}
+
+.inactive:hover {
+  color: darkgray;
+}
+
+.mainContent {
+  min-height: 45vw;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "Bona Nova SC", serif;
+  font-weight: 1000;
+  font-style: normal;
+  animation: an2 2s forwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.basket__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.card-field {
+  margin: 0 20px 0 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 10px 0px;
+}
+
+
+.cardText {
+  font-size: clamp(20px, 1vw, 30px);
+}
+
+.cardImg {
+  width: 125px;
+  height: 140px;
+}
+.cardImgInner {
+  height: 160px;
+  padding: 5px;
+  margin: 5px;
+  width: 150px;
+  min-width: 150px;
+  border: 2px solid;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__description {
+  margin-left: 10px;
+  width: 25vw;
+}
+
+.cardContent {
+  font-size: clamp(20px, 2vw, 32px);
+}
+.cardSubtitle {
+  color: gray;
+}
+
+.end-of-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.quantityOfGoods {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.increase,
+.decrease {
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: lightgray;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.remove {
+  color: red;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: lightgray;
+}
+
+.clear-cart {
+  background-color: black;
+  padding: 8px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 80%;
+}
+
+.mainText {
+  background-color: #afaeae;
+  padding: 20px;
+  border-radius: 25px;
+  margin: 20px;
+}
+
+.registration__button {
+  background-color: black;
+  padding: 8px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 80%;
+}
+
+.total_card {
+  font-size: clamp(15px, 1vw, 25px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  color: white;
+  font-size: large;
+  border-radius: 10% 10% 0 0;
+  margin-top: 5%;
+  animation: ani 1s forwards;
+}
+
+.footer-rows {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  gap: 5%;
+}
+
+.footer-column1 {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column2 {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column3 {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column4 {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-a {
+  color: gray;
+  text-decoration: none;
+  transition: 0.5s ease-out;
+}
+
+.footer-a:hover {
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+  box-shadow: 0 0 30px 25px gray, 0 0 60px 30px white;
+}
+
+.footer-text {
+  padding-top: 5%;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes an2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1450px) {
+  h4 {
+    display: none;
+  }
+  
+  .quantityOfGoods {
+    width: 75%;
+  }
+  
+}
+
+@media (max-width: 1190px) {
+  h4,
+  h3 {
+    display: none;
+  }
+  .cardTitle {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav {
+    height: auto;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 5px;
+    min-height: 85px;
+  }
+  .nav-brand {
+    margin-top: 10px;
+  }
+  .nav-text {
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    width: 100%;
+    text-wrap: nowrap;
+  }
+  .nav__basket {
+    min-height: 30px;
+    width: 5%;
+    min-width: 37px;
+  }
+
+  .nav__basket__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .basket__title {
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cardImg {
+    width: 75px;
+    height: 110px;
+  }
+  .cardImgInner {
+    min-width: 0;
+    width: 110px;
+    height: 140px;
+  }
+
+  .card__description {
+    width: 40vw;
+  }
+
+  .quantityOfGoods {
+    flex-direction: space-between;
+  }
+
+  .mainText {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .registration__button {
+    width: 85%;
+  }
+
+  .total_card {
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 85%;
+    justify-content: space-between;
+  }
+
+  footer {
+    font-size: 5vw;
+    height: auto;
+    border-radius: 5% 5% 0 0;
+    padding-bottom: 30px;
+  }
+  .footer-rows {
+    padding-top: 15px;
+    flex-direction: column;
+  }
+}
